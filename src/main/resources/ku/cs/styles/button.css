@@ -16,10 +16,28 @@
     -fx-background-color: #600000;
 }
 
-/* Dropdown Button Click */
+/* Login Button */
+.login-button {
+    -fx-background-color: #303337;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 15px;
+}
+
+/* Choice Box Button Click */
+
+.choice-box {
+    -fx-background-color: #303337;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #FFFFFF;
+    -fx-mark-color: #FFFFFF;
+}
+
+/* Confirm Button Click */
 
 .confirm-button {
-
+    -fx-background-color: #007D2A;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 10px;
 }
 
 .confirm-button:hover {
