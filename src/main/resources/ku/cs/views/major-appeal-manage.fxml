@@ -36,7 +36,7 @@
                </font>
             </Text>
             <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="441.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-            <Button layoutX="8.0" layoutY="281.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="จัดการคำร้อง" textFill="WHITE">
+            <Button layoutX="8.0" layoutY="281.0" mnemonicParsing="false" stylesheets="@../styles/button.css" text="จัดการคำร้อง" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -48,7 +48,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="8.0" layoutY="330.0" mnemonicParsing="false" onAction="#onApproverManageButtonClick" style="-fx-background-color: transparent;" text="จัดการข้อมูลผู้อนุมัติ" textFill="WHITE">
+            <Button layoutX="8.0" layoutY="330.0" mnemonicParsing="false" onAction="#onApproverManageButtonClick" stylesheets="@../styles/button.css" text="จัดการข้อมูลผู้อนุมัติ" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -60,7 +60,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="7.0" layoutY="375.0" mnemonicParsing="false" onAction="#onNisitManageButtonClick" style="-fx-background-color: transparent;" text="จัดการข้อมูลนิสิต" textFill="WHITE">
+            <Button layoutX="7.0" layoutY="375.0" mnemonicParsing="false" onAction="#onNisitManageButtonClick" stylesheets="@../styles/button.css" text="จัดการข้อมูลนิสิต" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -98,19 +98,19 @@
                </graphic>
             </Button>
          </children></Pane>
-      <TabPane layoutX="282.0" layoutY="190.0" prefHeight="592.0" prefWidth="1100.0" stylesheets="@../styles/style.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
+      <TabPane layoutX="282.0" layoutY="190.0" prefHeight="592.0" prefWidth="1100.0" stylesheets="@../styles/tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
         <tabs>
           <Tab style="-fx-padding: 10; -fx-background-radius: 20 0 0; -fx-font-size: 20; -fx-font-margin: 30;" text="ทั้งหมด">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="592.0" prefWidth="1100.0" style="-fx-background-color: transparent; -fx-background-radius: 00 20 20 20;">
                      <children>
-                        <TableView prefHeight="523.0" prefWidth="1100.0" style="-fx-background-radius: 00 20 20 20;" stylesheets="@../styles/table-view.css">
+                        <TableView prefHeight="525.0" prefWidth="1100.0" style="-fx-background-radius: 00 20 20 20;" stylesheets="@../styles/table-view.css">
                           <columns>
                             <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Date/Time" />
                             <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-font-color: #303337;" text="Topic" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Type" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Aprrover" />
-                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-background-radius: 00 20 00 00;" text="Status" />
+                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-background-radius: 00 20 00 00; -fx-border-radius: 00 20 00 00;" text="Status" />
                           </columns>
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

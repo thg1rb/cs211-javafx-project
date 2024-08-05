@@ -10,6 +10,7 @@
 
 .table-view .column-header{
     -fx-background-color: white;
+    -fx-border-color: transparent transparent lightgrey transparent;
 }
 
 .table-view .column-header .label {
@@ -94,6 +95,7 @@
 /* กำหนดสไตล์เพิ่มเติมสำหรับคอลัมน์เฉพาะ */
 .table-column-header .column-header .label {
     -fx-font-size: 16px; /* ขนาดฟอนต์ของหัวข้อคอลัมน์ */
+    -fx-alignment: CENTER;
 }
 
 .table-column .table-cell {
