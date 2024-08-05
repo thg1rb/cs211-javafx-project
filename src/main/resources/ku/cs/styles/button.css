@@ -1,0 +1,27 @@
+/* Sidebar Button Click */
+
+.sidebar-button {
+    -fx-background-color: transparent;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #183434;
+}
+
+.logout-button {
+    -fx-background-color: transparent;
+}
+
+.logout-button:hover {
+    -fx-background-color: #600000;
+}
+
+/* Dropdown Button Click */
+
+.confirm-button {
+
+}
+
+.confirm-button:hover {
+
+}
