@@ -14,16 +14,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1440.0" stylesheets="@../styles/button.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.FacultyAppealManageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1440.0" style="-fx-background-color: #F1F1F1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.MajorAppealManageController">
    <children>
-      <Label layoutX="270.0" layoutY="100.0" text="จัดการคำร้อง">
+      <Label layoutX="280.0" layoutY="110.0" text="จัดการคำร้อง">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
       <Pane prefHeight="832.0" prefWidth="200.0" style="-fx-background-color: #265252;">
          <children>
-            <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="7.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
+            <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="-1.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
             <Pane layoutX="40.0" layoutY="54.0" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #FCFCFC; -fx-background-radius: 100;" />
             <Text fill="WHITE" layoutX="13.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ผู้ใช้งาน:">
                <font>
@@ -35,44 +35,56 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <Button layoutY="281.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="ติดตามคำร้อง" textFill="WHITE">
+            <Button layoutX="8.0" layoutY="281.0" mnemonicParsing="false" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="จัดการคำร้อง" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../icons/faculty-request-manage-icon.png" />
+                        <Image url="@../../../icons/major-request-manage-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutY="331.0" mnemonicParsing="false" onAction="#onApproverButtonClick" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="จัดการข้อมูลผู้อนุมัติ" textFill="WHITE">
+            <Button layoutX="8.0" layoutY="330.0" mnemonicParsing="false" onAction="#onApproverManageButtonClick" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="จัดการข้อมูลผู้อนุมัติ" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../icons/faculty-approver-manage-icon.png" />
+                        <Image url="@../../../icons/major-approver-manage-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="7.0" layoutY="375.0" mnemonicParsing="false" onAction="#onNisitManageButtonClick" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="จัดการข้อมูลนิสิต" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/major-nisit-manage-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
          </children></Pane>
-      <TabPane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-border-radius: 00 20 20 20;" stylesheets="@../styles/tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
+      <TabPane layoutX="282.0" layoutY="190.0" prefHeight="592.0" prefWidth="1100.0" stylesheets="@../styles/tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
         <tabs>
-          <Tab style="-fx-background-radius: 20 00 00 00; -fx-padding: 10; -fx-font-size: 20;" text="ทั้งหมด">
+          <Tab style="-fx-padding: 10; -fx-background-radius: 20 0 0; -fx-font-size: 20; -fx-font-margin: 30;" text="ทั้งหมด">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-radius: 00 20 00 00; -fx-background-color: transparent;">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="592.0" prefWidth="1100.0" style="-fx-background-color: transparent; -fx-background-radius: 00 20 20 20;">
                      <children>
-                        <TableView prefHeight="532.0" prefWidth="1180.0" style="-fx-background-radius: 00 20 20 20;" stylesheets="@../styles/table-view.css">
+                        <TableView prefHeight="525.0" prefWidth="1100.0" style="-fx-background-radius: 00 20 20 20;" stylesheets="@../styles/table-view.css">
                           <columns>
                             <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Date/Time" />
                             <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-font-color: #303337;" text="Topic" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Type" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Aprrover" />
-                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-background-color: 00 20 00 00;" text="Status" />
+                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-background-radius: 00 20 00 00; -fx-border-radius: 00 20 00 00;" text="Status" />
                           </columns>
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -82,17 +94,17 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab style="-fx-background-radius: 00 20 00 00; -fx-padding: 10; -fx-font-size: 20;" text="ภาควิชาของตนเอง">
+          <Tab style="-fx-padding: 10; -fx-background-radius: 0 20 0 0; -fx-font-size: 20;" text="ภาควิชาของตนเอง">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-radius: 00 20 20 20;">
                      <children>
-                        <TableView prefHeight="532.0" prefWidth="1180.0" stylesheets="@../styles/table-view.css">
+                        <TableView prefHeight="525.0" prefWidth="1100.0" style="-fx-background-radius: 00 20 20 20;" stylesheets="@../styles/table-view.css">
                            <columns>
-                              <TableColumn prefWidth="183.0" style="-fx-background-radius: 20 0 0 0; -fx-font-size: 20;" text="Date/Time" />
+                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Date/Time" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-font-color: #303337;" text="Topic" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Type" />
                               <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Aprrover" />
-                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20;" text="Status" />
+                              <TableColumn prefWidth="183.0" style="-fx-font-size: 20; -fx-background-radius: 20;" text="Status" />
                            </columns>
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

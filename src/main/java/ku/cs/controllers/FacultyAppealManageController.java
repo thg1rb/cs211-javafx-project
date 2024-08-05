@@ -8,8 +8,10 @@ import java.io.IOException;
 public class FacultyAppealManageController {
 
 
+
+
     @FXML
-    public void onApproverButton() {
+    public void onApproverButtonClick() {
         try {
             FXRouter.goTo("faculty-approver-manage");
         } catch (IOException e) {

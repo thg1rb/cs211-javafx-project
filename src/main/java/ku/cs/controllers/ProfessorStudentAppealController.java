@@ -5,7 +5,9 @@ import ku.cs.services.FXRouter;
 
 import java.io.IOException;
 
-public class ProfessorStudentListController {
+public class ProfessorStudentAppealController {
+
+    // ไปที่หน้านิสิตในที่ปรึกษา
     @FXML
     public void onStudentListButtonClick() {
         try {
@@ -15,6 +17,7 @@ public class ProfessorStudentListController {
         }
     }
 
+    // ไปที่หน้าคำร้องจากนิสิต
     @FXML
     public void onStudentAppealButtonClick() {
         try {
@@ -23,4 +26,5 @@ public class ProfessorStudentListController {
             throw new RuntimeException(e);
         }
     }
+
 }
