@@ -48,7 +48,10 @@
          </columnResizePolicy>
       </TableView>
       <ChoiceBox layoutX="958.0" layoutY="114.0" prefHeight="45.0" prefWidth="140.0" stylesheets="@../styles/button.css" />
-      <TextField layoutX="1133.0" layoutY="114.0" prefHeight="45.0" prefWidth="285.0" stylesheets="@../styles/text-field.css" />
+      <TextField layoutX="1133.0" layoutY="114.0" prefHeight="45.0" prefWidth="285.0" promptText="ค้นหาจาก" stylesheets="@../styles/text-field.css">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
       <Button layoutY="281.0" mnemonicParsing="false" onAction="#onStudentListButtonClick" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="นิสิตในที่ปรึกษา" textFill="WHITE">
          <font>
             <Font size="18.0" />
@@ -87,7 +90,7 @@
          </graphic>
       </Button>
       <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="502.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-      <Button layoutY="776.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
+      <Button layoutY="776.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
          <font>
             <Font size="18.0" />
          </font>

@@ -60,7 +60,7 @@
                </graphic>
             </Button>
          </children></Pane>
-      <TabPane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-border-radius: 00 20 20 20;" stylesheets="@../styles/tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
+      <TabPane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-border-radius: 00 20 20 20;" stylesheets="@../styles/tab-pane-style.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
         <tabs>
           <Tab style="-fx-background-radius: 20 00 00 00; -fx-padding: 10; -fx-font-size: 20;" text="ทั้งหมด">
             <content>

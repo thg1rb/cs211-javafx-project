@@ -36,7 +36,7 @@
       <TableView layoutX="272.0" layoutY="180.0" prefHeight="592.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@../styles/table-view.css">
         <columns>
           <TableColumn prefWidth="75.0" style="-fx-font-size: 20; -fx-background-radius: 20 00 00 00;" text="Role" />
-          <TableColumn prefWidth="75.0" style="-fx-font-size: 20; -fx-font-color: #303337;" text="Name" />
+          <TableColumn prefWidth="75.0" style="-fx-font-size: 20; -fx-font-color: #303337; -fx-background-radius: 20;" text="Name" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

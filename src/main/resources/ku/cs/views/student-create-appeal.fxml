@@ -6,6 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -15,7 +16,6 @@
       <Pane prefHeight="832.0" prefWidth="200.0" style="-fx-background-color: #265252;">
          <children>
             <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="16.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-            <Pane layoutX="40.0" layoutY="54.0" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #FCFCFC; -fx-background-radius: 100;" />
             <Text fill="WHITE" layoutX="13.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="light-font" text="ผู้ใช้งาน:">
                <font>
                   <Font size="20.0" />
@@ -40,7 +40,7 @@
                </graphic>
             </Button>
             <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="502.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-            <Button layoutY="776.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
+            <Button layoutY="776.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
                <font>
                   <Font size="18.0" />
                </font>
@@ -65,6 +65,7 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Circle fx:id="profileImageCircle" fill="DODGERBLUE" layoutX="101.0" layoutY="110.0" radius="60.0" stroke="BLACK" strokeType="INSIDE" />
          </children>
       </Pane>
       <Text layoutX="270.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="สร้างใบคำร้อง">
@@ -72,7 +73,7 @@
             <Font size="36.0" />
          </font>
       </Text>
-      <ChoiceBox layoutX="1195.0" layoutY="114.0" prefHeight="45.0" prefWidth="212.0" stylesheets="@../styles/button.css" />
+      <ChoiceBox fx:id="appealChoiceBox" layoutX="1195.0" layoutY="114.0" prefHeight="45.0" prefWidth="212.0" stylesheets="@../styles/button.css" />
       <Pane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
          <children>
             <Button layoutX="952.0" layoutY="524.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" styleClass="confirm-button" stylesheets="@../styles/button.css" text="ยืนยันการสร้าง">
@@ -94,7 +95,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutY="340.0" mnemonicParsing="false" onAction="#onCreateAppealButtonClick" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="สร้างใบคำร้อง    " textFill="WHITE">
+      <Button layoutY="340.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="สร้างใบคำร้อง    " textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>

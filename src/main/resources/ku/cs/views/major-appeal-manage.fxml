@@ -72,7 +72,7 @@
                </graphic>
             </Button>
          </children></Pane>
-      <TabPane layoutX="282.0" layoutY="190.0" prefHeight="592.0" prefWidth="1100.0" stylesheets="@../styles/tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
+      <TabPane layoutX="282.0" layoutY="190.0" prefHeight="592.0" prefWidth="1100.0" stylesheets="@../styles/tab-pane-style.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
         <tabs>
           <Tab style="-fx-padding: 10; -fx-background-radius: 20 0 0; -fx-font-size: 20; -fx-font-margin: 30;" text="ทั้งหมด">
             <content>
