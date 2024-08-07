@@ -31,4 +31,13 @@ public class AdminStaffManagementController {
             throw new RuntimeException(e);
         }
     }
+
+    @FXML
+    public void onLogoutButtonClick() {
+        try {
+            FXRouter.goTo("login");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
