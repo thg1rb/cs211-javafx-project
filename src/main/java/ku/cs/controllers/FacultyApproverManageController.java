@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class FacultyApproverManageController {
 
+    //
     @FXML
     public void onAppealButtonClick(){
         try {
@@ -16,6 +17,7 @@ public class FacultyApproverManageController {
         }
     }
 
+    //
     @FXML
     public void onLogoutButtonClick(){
 

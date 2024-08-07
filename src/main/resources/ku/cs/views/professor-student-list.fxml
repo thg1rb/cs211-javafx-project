@@ -52,7 +52,7 @@
          <font>
             <Font size="20.0" />
          </font></TextField>
-      <Button layoutY="281.0" mnemonicParsing="false" onAction="#onStudentListButtonClick" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="นิสิตในที่ปรึกษา" textFill="WHITE">
+      <Button layoutY="281.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="นิสิตในที่ปรึกษา" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>

@@ -54,7 +54,7 @@ public class LoginController {
         // Professor
         else if (username.equals("professor") && password.equals("professor")) {
             try {
-                FXRouter.goTo("professor-student-appeal");
+                FXRouter.goTo("professor-student-list");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
