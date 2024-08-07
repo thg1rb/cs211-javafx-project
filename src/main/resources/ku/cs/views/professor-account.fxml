@@ -11,12 +11,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ProfessorAccountController">
    <children>
       <Pane prefHeight="832.0" prefWidth="200.0" style="-fx-background-color: #265252;">
          <children>
-            <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="-1.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
+            <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="6.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
             <Pane layoutX="40.0" layoutY="54.0" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #FCFCFC; -fx-background-radius: 100;" />
             <Text fill="WHITE" layoutX="13.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="light-font" text="ผู้ใช้งาน:">
                <font>
@@ -28,61 +27,6 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="441.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-            <Button layoutX="8.0" layoutY="281.0" mnemonicParsing="false" onAction="#onStudentListButtonClick" text="นิสิตในที่ปรึกษา" textFill="WHITE">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../icons/professor-users.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="8.0" layoutY="330.0" mnemonicParsing="false" onAction="#onStudentAppealButtonClick" text="คำร้องจากนิสิต" textFill="WHITE">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../icons/professor-document.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="8.0" layoutY="723.0" mnemonicParsing="false" text="จัดการบัญชี" textFill="WHITE">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../icons/professor-user-profile.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="499.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-            <Button layoutX="6.0" layoutY="782.0" mnemonicParsing="false" text="ออกจากระบบ" textFill="RED">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../icons/professor-logout.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Text fill="RED" layoutX="918.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*รหัสผ่านไม่ตรงกัน">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
          </children>
       </Pane>
       <Text layoutX="270.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="จัดการบัญชี">
@@ -90,30 +34,30 @@
             <Font size="36.0" />
          </font>
       </Text>
-      <Pane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-color: #FFFFFF;">
+      <Pane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;">
          <children>
-            <Button layoutX="772.0" layoutY="424.0" mnemonicParsing="false" text="ยืนยันการแก้ไข">
+            <Button layoutX="772.0" layoutY="424.0" mnemonicParsing="false" styleClass="login-button" stylesheets="@../styles/button.css" text="ยืนยันการแก้ไข">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <TextField layoutX="638.0" layoutY="169.0" prefHeight="55.0" prefWidth="440.0" promptText="รหัสผ่านเดิม">
+            <TextField layoutX="638.0" layoutY="169.0" prefHeight="55.0" prefWidth="440.0" promptText="รหัสผ่านเดิม" stylesheets="@../styles/text-field.css">
                <font>
                   <Font size="24.0" />
                </font>
             </TextField>
-            <TextField layoutX="638.0" layoutY="329.0" prefHeight="55.0" prefWidth="440.0" promptText="ยืนยันรหัสผ่านใหม่">
+            <TextField layoutX="638.0" layoutY="329.0" prefHeight="55.0" prefWidth="440.0" promptText="ยืนยันรหัสผ่านใหม่" stylesheets="@../styles/text-field.css">
                <font>
                   <Font size="24.0" />
                </font>
             </TextField>
-            <TextField layoutX="638.0" layoutY="258.0" prefHeight="55.0" prefWidth="440.0" promptText="รหัสผ่านใหม่">
+            <TextField layoutX="638.0" layoutY="258.0" prefHeight="55.0" prefWidth="440.0" promptText="รหัสผ่านใหม่" stylesheets="@../styles/text-field.css">
                <font>
                   <Font size="24.0" />
                </font>
             </TextField>
-            <Pane layoutX="151.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FCFCFC; -fx-background-radius: 100;" />
-            <Button contentDisplay="TOP" layoutX="226.0" layoutY="233.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF;">
+            <Pane layoutX="211.0" layoutY="94.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FCFCFC; -fx-background-radius: 100;" />
+            <Button contentDisplay="TOP" layoutX="286.0" layoutY="263.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF;">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -122,22 +66,22 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Label layoutX="141.0" layoutY="355.0" text="ชื่อ-สกุล:">
+            <Label layoutX="172.0" layoutY="355.0" text="ชื่อ-สกุล:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="141.0" layoutY="401.0" text="อีเมล:">
+            <Label layoutX="172.0" layoutY="401.0" text="อีเมล:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="141.0" layoutY="445.0" text="บทบาท:">
+            <Label layoutX="172.0" layoutY="445.0" text="บทบาท:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="271.0" layoutY="355.0" text="ชื่อ-สกุล:">
+            <Label layoutX="302.0" layoutY="355.0" text="อ.ศรชัย ลักษณะปีติ">
                <font>
                   <Font size="24.0" />
                </font>
@@ -149,17 +93,80 @@
             </Label>
             <Label layoutX="640.0" layoutY="226.0" text="*รหัสผ่านเดิมไม่ถูกต้อง" textFill="RED" />
             <Label layoutX="642.0" layoutY="386.0" text="*รหัสผ่านไม่ตรงกัน" textFill="RED" />
-            <Label layoutX="271.0" layoutY="401.0" text="ชื่อ-สกุล:">
+            <Label layoutX="302.0" layoutY="401.0" text="sornchai.la@ku.th">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="271.0" layoutY="445.0" text="อาจารย์">
+            <Label layoutX="302.0" layoutY="445.0" text="อาจารย์">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
          </children>
       </Pane>
+      <Button layoutY="281.0" mnemonicParsing="false" onAction="#onStudentListButtonClick" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="นิสิตในที่ปรึกษา" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/professor-users.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutY="330.0" mnemonicParsing="false" onAction="#onStudentAppealButtonClick" prefHeight="49.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="คำร้องจากนิสิต" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/professor-document.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="444.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
+      <Button layoutY="719.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="ตั้งค่าโปรแกรม" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/student-setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="502.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
+      <Button layoutY="776.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/professor-logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="386.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
+      <Button layoutY="661.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0" styleClass="sidebar-button" stylesheets="@../styles/button.css" text="จัดการบัญชี     " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/professor-user-profile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

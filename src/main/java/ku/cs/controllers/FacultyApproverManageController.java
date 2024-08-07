@@ -5,26 +5,30 @@ import ku.cs.services.FXRouter;
 
 import java.io.IOException;
 
-public class ProfessorStudentAppealController {
+public class FacultyApproverManageController {
 
-    // ไปที่หน้านิสิตในที่ปรึกษา
     @FXML
-    public void onStudentListButtonClick() {
+    public void onAppealButtonClick(){
         try {
-            FXRouter.goTo("professor-student-list");
+            FXRouter.goTo("faculty-appeal-manage");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    // ออกจากระบบ (กลับไปที่หน้าเข้าสู่ระบบ)
     @FXML
-    public void onLogoutButtonClick() {
+    public void onLogoutButtonClick(){
+
         try {
             FXRouter.goTo("login");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
+
+
+
+
+
 
 }
