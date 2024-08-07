@@ -60,7 +60,7 @@
                </graphic>
             </Button>
          </children></Pane>
-      <TabPane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-border-radius: 00 20 20 20;" stylesheets="@../styles/tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
+      <TabPane layoutX="230.0" layoutY="205.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-border-radius: 00 20 20 20;" stylesheets="@../styles/tab-pane-style.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="70.0" tabMaxWidth="200.0" tabMinHeight="43.0" tabMinWidth="200.0">
         <tabs>
           <Tab style="-fx-background-radius: 20 00 00 00; -fx-padding: 10; -fx-font-size: 20;" text="ทั้งหมด">
             <content>
@@ -82,7 +82,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab style="-fx-background-radius: 00 20 00 00; -fx-padding: 10; -fx-font-size: 20;" text="ภาควิชาของตนเอง">
+          <Tab style="-fx-background-radius: 00 20 00 00; -fx-padding: 10; -fx-font-size: 20;" text="คณะของตนเอง">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -118,7 +118,7 @@
          </graphic>
       </Button>
       <Line endX="186.86593627929688" endY="273.3656311035156" layoutX="-4.0" layoutY="502.0" startX="16.733203887939453" startY="273.3656311035156" stroke="#e1e4df" />
-      <Button layoutY="776.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
+      <Button layoutY="776.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="55.0" prefWidth="200.0" styleClass="logout-button" stylesheets="@../styles/button.css" text="ออกจากระบบ  " textFill="RED">
          <font>
             <Font size="18.0" />
          </font>
