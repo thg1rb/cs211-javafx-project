@@ -17,11 +17,11 @@ public class ProfessorStudentAppealController {
         }
     }
 
-    // ไปที่หน้าคำร้องจากนิสิต
+    // ออกจากระบบ (กลับไปที่หน้าเข้าสู่ระบบ)
     @FXML
-    public void onStudentAppealButtonClick() {
+    public void onLogoutButtonClick() {
         try {
-            FXRouter.goTo("professor-student-appeal");
+            FXRouter.goTo("login");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

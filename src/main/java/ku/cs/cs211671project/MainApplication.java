@@ -13,7 +13,7 @@ public class MainApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXRouter.bind(this, stage, "CS211 Project", 1440, 832);
         configRoutes();
-        FXRouter.goTo("faculty-appeal-manage");
+        FXRouter.goTo("login");
     }
 
     private void configRoutes() {

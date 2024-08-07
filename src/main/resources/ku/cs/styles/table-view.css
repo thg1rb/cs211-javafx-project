@@ -101,3 +101,5 @@
 .table-column .table-cell {
     -fx-alignment: CENTER; /* จัดข้อมูลในเซลล์ให้อยู่ตรงกลาง */
 }
+
+.table-column .column-header
